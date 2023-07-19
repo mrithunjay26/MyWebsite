@@ -1,0 +1,33 @@
+#Function Component:#
+
+function App() { ... }: This defines a functional component named App. It represents the root component of the React application.
+State Hooks:
+
+const [name, setName] = useState('');: This line declares a state variable name and a function setName to update its value. The initial value of name is an empty string ('').
+Similar lines exist for occupation, interest, age, message, todoList, and todoText. These state variables are used to store and manage the component's state.
+#Constants:#
+
+#recommendedTasks and images# are arrays that store a list of recommended tasks and image paths, respectively.
+currentImageIndex is a state variable that keeps track of the current index in the images array for displaying the slideshow.
+useEffect Hook:
+
+#useEffect(() => { ... }, []);:# This hook is used to perform side effects in the component. In this case, it sets up an interval that updates the currentImageIndex every 3 seconds, creating a slideshow effect. The empty dependency array [] ensures the effect runs only once when the component mounts and is cleaned up when the component unmounts.
+Event Handlers:
+
+#handleAddTodo# is a function that handles the form submission for adding a new todo item to the todoList state. It prevents the default form submission behavior, checks if todoText is not empty, adds it to the todoList, and resets the todoText state variable.
+handleTodoChange is a function that handles the checkbox change event for a todo item. It updates the corresponding todo item's status in the todoList array.
+#JSX (HTML-like syntax):#
+
+The return statement contains JSX code that defines the structure and content of the component's rendered output.
+It includes HTML-like tags such as div, header, h1, nav, a, img, ul, li, input, textarea, label, form, p, h2, etc.
+JSX allows embedding dynamic values from JavaScript expressions using curly braces {}.
+Event handlers are specified using onX attributes (e.g., onChange, onSubmit) that reference the corresponding event handler functions defined earlier.
+#Component Structure:#
+t
+The code defines a layout divided into multiple sections using CSS classes and div elements.
+Each section represents different aspects of the application, such as a slideshow, user information, skills, background info, and an "About Me" section.
+The content is organized using headings (h1, h2) and lists (ul, li).
+User input fields (text inputs, textareas) are associated with their respective state variables using the value and onChange attributes.
+The recommended tasks are rendered dynamically using the map function to iterate over the recommendedTasks array.
+
+You have to download Mongoose to connect with the mongoDB with nodejs becuz there may be a security risk with direct connection,
