@@ -1,27 +1,28 @@
 {
-  "name": "myrealprofile",
+  "homepage": "https://mrithunjay26.github.io/MrithunjayShanmuganand/my-app/public/index.html",
+  "name": "my-app",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://mrithunjay26.github.io/MrithunjayShanmuganand",
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.5",
     "@testing-library/react": "^13.4.0",
     "@testing-library/user-event": "^13.5.0",
     "cors": "^2.8.5",
     "express": "^4.18.2",
-    "localforage": "^1.10.0",
-    "match-sorter": "^6.3.1",
+    "mongoose": "^7.4.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-    "react-router-dom": "^6.14.1",
     "react-scripts": "^2.1.3",
-    "sort-by": "^0.0.2",
     "web-vitals": "^2.1.4"
   },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
     "extends": [
@@ -40,5 +41,13 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "description": "This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).",
+  "main": "index.js",
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "gh-pages": "^6.0.0"
   }
 }

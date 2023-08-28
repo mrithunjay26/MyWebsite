@@ -1,9 +1,9 @@
+"use client";
 import React, { useState, useEffect } from 'react';
 import './App.css';
 import axios from 'axios';
 
 function App() {
-
   const [name, setName] = useState('');
   const [occupation, setOccupation] = useState('');
   const [interest, setInterest] = useState('');
@@ -37,12 +37,12 @@ function App() {
         });
   };
   const images = [
-    'family.jpeg',
-    'WhatsApp Image 2023-07-16 at 9.21.30 PM.jpeg',
-    'WhatsApp Image 2023-07-16 at 9.29.38 PM.jpeg',
-      'WhatsApp Image 2023-07-16 at 9.35.13 PM.jpeg',
-      'WhatsApp Image 2023-07-16 at 9.38.07 PM.jpeg',
-      'WhatsApp Image 2023-07-16 at 9.45.04 PM.jpeg',
+    '/WhatsApp Image 2023-07-16 at 9.21.10 PM.jpeg',
+    '/WhatsApp Image 2023-07-16 at 9.21.30 PM.jpeg',
+    '/WhatsApp Image 2023-07-16 at 9.29.38 PM.jpeg',
+    '/WhatsApp Image 2023-07-16 at 9.35.13 PM.jpeg',
+    '/WhatsApp Image 2023-07-16 at 9.38.07 PM.jpeg',
+    '/WhatsApp Image 2023-07-16 at 9.45.04 PM.jpeg',
     // Add more image paths
   ];
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
@@ -169,13 +169,19 @@ function App() {
           </div>
           <div className="about-me">
             <h2>About Me</h2>
-            <p>An programmer, chess player, soccer enthusiast and bored 15 year old I have embarked on my own journey of programming throughout the last 4 years through full stack, online courses and recently cs50. I have also embarked on a long standing journey of chess at 2300 rating on chess.com a tireless battle of learning and strategy that has kept me in the top of chess. Soccer on the other hand has been with me every since my arrival to the United States an way for me to connect with new friends which I have kept playing throughout my school career</p>
-            <h2>Things I recommend to try:</h2>
+            <p>
+              An programmer, chess player, soccer enthusiast and bored 15-year-old.
+              I have embarked on my own journey of programming throughout the last 4 years
+              through full stack, online courses, and recently cs50. I have also embarked on
+              a long-standing journey of chess at 2300 rating on chess.com, a tireless battle of
+              learning and strategy that has kept me in the top of chess. Soccer, on the other hand,
+              has been with me every since my arrival to the United States, a way for me to connect
+              with new friends which I have kept playing throughout my school career.
+            </p>
+            <h2>Things I recommend trying:</h2>
             <ul>
               {recommendedTasks.map((task, index) => (
-                  <li key={index}>
-                    {task}
-                  </li>
+                  <li key={index}>{task}</li>
               ))}
             </ul>
           </div>
@@ -185,4 +191,3 @@ function App() {
 }
 
 export default App;
-
